@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculators</title>
+    <link rel="stylesheet" href="styles/home.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Financial Calculators</h1>
+    </header>
+
+    <!-- Centered Drop-down Menu -->
+    <section id="calculator-selection">
+        <form>
+            <label for="calculator">Select a Calculator:</label>
+            <select id="calculator" name="calculator" onchange="navigateToCalculator()">
+                <option value="">-- Choose a Calculator --</option>
+                <option value="mort.html">Mortgage Calculator</option>
+                <option value="compound.html">Compound Interest Calculator</option>
+                <option value="annuity.html">Annuity Calculator</option>
+            </select>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Financial Calculators</p>
+    </footer>
+
+    <script>
+        function navigateToCalculator() {
+            const calculatorPage = document.getElementById('calculator').value;
+            if (calculatorPage) {
+                window.location.href = calculatorPage;
+            }
+        }
+    </script>
+</body>
+</html>

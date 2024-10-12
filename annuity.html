@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annuity Calculator</title>
+    <link rel="stylesheet" href="styles/annuity.css">
+    <link rel="script" href="scripts/annuity.js">
+</head>
+<body>
+    <header>
+        <h1>Annuity Calculator</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="mort.html">Mortgage Calculator</a></li>
+                <li><a href="compound.html">Compound Interest Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="annuity-calculator">
+        <h2>Calculate Present Value of an Annuity</h2>
+        <form>
+            <label for="payout">Monthly Payout:</label>
+            <input type="number" id="payout" required>
+
+            <label for="annuity-interest-rate">Interest Rate (%):</label>
+            <input type="number" id="annuity-interest-rate" step="0.01" required>
+
+            <label for="years-annuity">Number of Years:</label>
+            <input type="number" id="years-annuity" required>
+
+            <button type="button" onclick="calculatePresentValue()">Calculate</button>
+        </form>
+
+        <p id="present-value"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Annuity Calculators</p>
+    </footer>
+
+    <script src="scripts/annuity.js"></script>
+</body>
+</html>
