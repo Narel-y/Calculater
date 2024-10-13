@@ -11,7 +11,9 @@ header {
     color: white;
     padding: 15px;
     text-align: center;
-    width: 100%;
+    width: 100%;text-align: center;
+
+
 }
 
 nav ul {
@@ -38,10 +40,10 @@ section {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
 form label, input {
+    
     display: block;
     margin: 10px 0;
 }

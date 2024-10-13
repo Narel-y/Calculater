@@ -13,3 +13,5 @@ function calculateCompoundInterest() {
     document.getElementById('future-value').innerText = `Future Value: $${futureValue.toFixed(2)}`;
     document.getElementById('total-compound-interest').innerText = `Total Interest Earned: $${totalInterest.toFixed(2)}`;
 }
+
+
